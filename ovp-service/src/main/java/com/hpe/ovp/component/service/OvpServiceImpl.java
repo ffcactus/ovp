@@ -5,16 +5,20 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+import com.hpe.ovp.component.model.PostApplianceDto;
 import com.hpe.ovp.component.model.ServerHardware;
 
 @Component
 public class OvpServiceImpl implements OvpServiceInterface {
 
-	public List<ServerHardware> getServerHardwares() {
+	public List<ServerHardware> getServers() {
 		List<ServerHardware> ret = new ArrayList<ServerHardware>();
 		ret.add(new ServerHardware("server 1"));
 		ret.add(new ServerHardware("server 2"));
 		return ret;
+	}
+
+	public void importAppliance(PostApplianceDto dto) {		
 	}
 
 }
