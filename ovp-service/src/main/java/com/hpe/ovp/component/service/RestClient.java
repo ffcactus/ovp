@@ -9,12 +9,13 @@ import org.springframework.web.client.RestTemplate;
 
 public class RestClient {
 
-	private String server = "http://localhost:3000";
+	private String server;
 	private RestTemplate rest;
 	private HttpHeaders headers;
 	private HttpStatus status;
 
-	public RestClient() {
+	public RestClient(String server) {
+		this.server = server;
 		rest = new RestTemplate();
 		headers = new HttpHeaders();
 		headers.add("Content-Type", "application/json");
