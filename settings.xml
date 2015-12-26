@@ -2,7 +2,7 @@
 <settings>
   <servers>
     <server>
-      <id>TomcatServer</id>
+      <id>tomcat7</id>
       <username>baibin</username>
       <password>iforgot</password>
     </server>

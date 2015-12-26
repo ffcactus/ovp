@@ -14,6 +14,8 @@
 			<configuration>
 				<url>http://localhost:8080/manager/text</url>
 				<path>/${project.build.finalName}</path>
+				<username>baibin</username>
+				<password>iforgot</password>
 			</configuration>
 		</plugin>
   	</plugins>
