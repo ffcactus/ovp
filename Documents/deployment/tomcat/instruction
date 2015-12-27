@@ -1,0 +1,22 @@
+Index
+
+1. How do I make my web application be the Tomcat default application?
+2. How to set the default port to 80 so that web application can access
+   at http://localhost/
+
+===========================================================
+
+1. How do I make my web application be the Tomcat default application?
+
+The pages and code of your "mywebapp" application currently reside in (CATALINA_BASE)/webapps/mywebapp/. In a standard Tomcat installation, you will notice that under the same directory (CATALINA_BASE)/webapps/, there is a directory called ROOT (the capitals are important, even under Windows). That is the residence of the current Tomcat default application, the one that is called right now when a user calls up "http://myhost.company.com[:port]". The trick is to put your application in its place.
+
+First stop Tomcat.
+Then before you replace the current default application, it may be a good idea to make a copy of it somewhere else.
+Then delete everything under the ROOT directory, and move everything that was previously under the (CATALINA_BASE)/webapps/mywebapp/ directory, toward this (CATALINA_BASE)/webapps/ROOT directory. In other words, what was previously .../mywebapp/WEB-INF should now be .../ROOT/WEB-INF (and not .../ROOT/mywebapp/WEB-INF).
+
+Just by doing this, you have already made you webapp into the Tomcat default webapp.
+
+2. How to set the default port to 80 so that web application can access
+   at http://localhost
+
+Edit the <Connector> tag in server.xml. Change the port=8080 to port=80. Port 80 is the default HTTP port.
