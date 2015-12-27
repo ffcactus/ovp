@@ -33,8 +33,7 @@ public class OvpController {
 	@RequestMapping("/server")
 	public List<ServerHardware> getServers(
 			final HttpServletRequest request,
-            final HttpServletResponse response,
-            @RequestBody final PostApplianceDto dto) 
+            final HttpServletResponse response) 
 	{
 		return service.getServers(); 
 	}

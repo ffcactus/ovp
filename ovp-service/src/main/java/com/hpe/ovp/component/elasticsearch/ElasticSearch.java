@@ -19,7 +19,6 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hpe.ovp.component.model.UserEntity;
 
-@Component
 public class ElasticSearch {
 	
 	private static final String SETTING_KEY_CLUSTER_NAME = "cluster.name";

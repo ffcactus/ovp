@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings>
-  <servers>
-    <server>
-      <id>tomcat7</id>
-      <username>baibin</username>
-      <password>iforgot</password>
-    </server>
-  </servers>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0
+	xmlns:xsi="
+	http: / www.w3.org / XMLSchema-instance "
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+		http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<repositories>
+		<repository>
+			<id>io.spring.repo.maven.release</id>
+			<url>http://repo.spring.io/release/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	
+	<servers>
+		<server>
+			<id>tomcat7</id>
+			<username>baibin</username>
+			<password>iforgot</password>
+		</server>
+	</servers>
 </settings>

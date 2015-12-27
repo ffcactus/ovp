@@ -2,6 +2,8 @@ package com.hpe.ovp.component.model;
 
 public class ServerHardware {
 	
+	private String name;
+	
 	public ServerHardware() {
 		
 	}
@@ -9,8 +11,6 @@ public class ServerHardware {
 	public ServerHardware(String name) {
 		this.name = name;
 	}
-
-	private String name;
 
 	public String getName() {
 		return name;
