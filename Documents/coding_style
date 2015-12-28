@@ -1,0 +1,51 @@
+Java
+
+The CIC Java code format is based on this document and embodied by the following Eclipse preferences (set using the Window > Preferences menu item):
+
+On the General > Editors > Text Editors tab:
+Check the "Insert spaces for tabs" box.
+"Show print margin" is often helpful. Set the print margin column to 132.
+
+On the General > Workspace tab:
+Under "New text file line delimiter", select "Other", then select "Unix".
+On the Ant > Editor > Formatter tab:
+Turn off the "Use tab character instead of spaces" box.
+
+On the Java > Code Style > Clean Up tab:
+Click the Import... button and import JavaCodeCleanup.xml
+
+On the Java > Code Style > Code Templates tab:
+Click the Import... button and import JavaCodeTemplates.xml
+Check the "Automatically add comments for new methods and types" box
+
+On the Java > Code Style > Formatter tab:
+Click the Import... button and import JavaCodeFormat.xml
+
+On the Java > Editor > Save Actions tab:
+Check "Perform the selected actions on save".
+Check "Format source code".
+Check "Additional actions".
+Click the Configure... button.
+
+On the "Code Organizing" tab:
+Check "Remove trailing whitespace".
+Uncheck "Correct indentation" for Eclipse luna. (On Eclipse Luna, this setting may have to be unchecked, or abnormal indentation of source code may occur)
+
+On the "Code Style" tab:
+Check "Use blocks in if/while/for/do statements".
+Check "Convert for loops to enhanced".
+Under "Variable declarations", check "Parameter" and "Local variables".
+
+On the "Member Accesses" tab:
+Check "Use declaring class as qualifier".
+
+On the "Unnecessary Code" tab:
+Check "Remove unused imports".
+Check "Remove unnecessary '$NON-NLS$' tags".
+Click OK.
+
+On the XML > XML Files > Editor tab:
+Set "Line width" to 132.
+Under "Format comments", uncheck "Join lines".
+Select "Indent using spaces".
+Set "Indentation size" to 4.
