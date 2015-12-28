@@ -1,0 +1,11 @@
+*** Guide *** 
+1. How to access ElasticSearch from outside of this machine.
+
+-------------------------------------------------------------------------------
+
+1. How to access ElasticSearch from outside of this machine.
+By default, the ElasticSearch is only accessible inside this machine, you have
+to configure
+    /etc/elasticsearch/elasticsearch.yml
+to set:
+    network.host: <this machine's IP>
